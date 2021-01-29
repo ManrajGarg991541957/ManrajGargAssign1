@@ -1,0 +1,6 @@
+<!-- Manraj Garg s991541957 -->
+<resources>
+    <string name="app_name">ManrajLab1</string>
+    <string name="button_submit">Soumettre</string>
+    <string name="label_main">Bonjour le monde</string>
+</resources>
