@@ -14,4 +14,10 @@
         android:layout_height="wrap_content"
         android:text="@string/label_garg" />
 
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="355dp"
+        android:layout_height="410dp"
+        android:src="@drawable/tree" />
+
 </LinearLayout>
