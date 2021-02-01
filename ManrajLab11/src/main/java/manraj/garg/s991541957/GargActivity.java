@@ -6,7 +6,12 @@ package manraj.garg.s991541957;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class GargActivity extends AppCompatActivity {
 
@@ -14,5 +19,10 @@ public class GargActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_garg);
+
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(ManrajActivity.msg);
+        TextView textView = findViewById(R.id.displayText);
+        textView.setText(message);
     }
 }

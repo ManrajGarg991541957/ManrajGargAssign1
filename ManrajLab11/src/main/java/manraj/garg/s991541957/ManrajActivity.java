@@ -11,11 +11,14 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
-
 import com.google.android.material.snackbar.Snackbar;
 
 public class ManrajActivity extends AppCompatActivity {
+
+    public static final String msg="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +39,7 @@ public class ManrajActivity extends AppCompatActivity {
                 toast.show();
 
                 intent = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://www.google.ca"));
+                        Uri.parse(getString(R.string.url)));
                 startActivity(intent);
                 break;
             case R.id.btnActivity:
@@ -45,9 +48,13 @@ public class ManrajActivity extends AppCompatActivity {
                 .setAction("Action", null).show();
 
                 intent = new Intent(this, GargActivity.class);
+                EditText editText = (EditText) findViewById(R.id.manrajEV);
+                String message = editText.getText().toString();
+                intent.putExtra(msg, message);
                 startActivity(intent);
             default:
                 break;
         }
     }
+
 }
