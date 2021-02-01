@@ -1,12 +1,12 @@
 <!-- Manraj Garg s991541957 -->
 <resources>
     <string name="app_name">ManrajLab1</string>
-    <string name="button_submit">Soumettre</string>
-    <string name="label_main">Bonjour le monde</string>
+    <string name="label_main">Bienvenu Manraj Garg s991541957</string>
     <string name="toast_label">Manraj Garg www.google.ca</string>
-    <string name="call_browser">Call Browser</string>
-    <string name="call_activity">Call Activity</string>
+    <string name="call_browser">Navigateur d\'appels</string>
+    <string name="call_activity">Activité d\'appel</string>
     <string name="label_garg">Manraj Garg s991541957</string>
+    <string name="url">https://www.google.ca</string>
     <color name="blue">#ADD8E6</color>
     <color name="yellow">#FFFF00</color>
 </resources>
